@@ -86,10 +86,14 @@ class MainActivity : ComponentActivity() {
         //
 
         enableEdgeToEdge()
+
+        //declara automáticamente que la app debe diseñarse de borde a borde y ajusta los colores de las barras del sistema
+
+
         super.onCreate(savedInstanceState)
         //Cuando anulas el método onCreate(), debes llamar a la implementación de la superclase
         // a fin de completar la creación de la actividad; por lo tanto,
-        //entro de ella, debes llamar de inmediato a super.onCreate()
+        //dentro de ella, debes llamar de inmediato a super.onCreate()
         //
         //
 
@@ -99,6 +103,8 @@ class MainActivity : ComponentActivity() {
         // Aquí aparecen los mensajes de Android sobre tu app
         // incluidos los que envías de manera explícita al registro con el método Log.d()
         // u otros métodos de clase Log.
+        // log.d -depuración; .i-información; .v -detalle en mensajes
+        // log. e -errores, .w -warning
 
         setContent {
             //en onCreate(), debes llamar a setContent(), que especifica el diseño de la IU de la actividad
